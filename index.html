@@ -15,16 +15,26 @@
     <div class="plantilla">
         <div class="card">
             <div class="contenido">
-                <h5 class="texto">" I've been interested in coding for a while but never taken the jump, until now. I couldn't recommend this course enough. <br>I'm now in the job of my dreams and so excited about the future. "</h5>
-                <p class="nombre">Tanya Sinclair</p>
-                <p class="puesto">UX Engineer</p>
+                <h5 id="text1" class="texto">" I've been interested in coding for a while but never taken the jump, until now. I couldn't recommend this course enough. <br>I'm now in the job of my dreams and so excited about the future. "</h5>
+                <p id="text2" class="nombre">Tanya Sinclair</p>
+                <p id="text3" class="puesto">UX Engineer</p>
             </div>
             <div class="imagen">
                 <img class="bg" src="./static/img/pattern-bg.svg" alt="bg">
-                <img class="foto" src="./static/img/image-tanya.jpg" alt="tanya">
+                <img id="foto" class="foto" src="./static/img/image-tanya.jpg" alt="tanya">
+                <div class="botones">
+                    <div class="flecha">
+                        <button class="bizq" id="izq" href="" onclick="cambiar('izquierda')"></a>
+                    </div>
+                    <div class="flecha">
+                        <button class="bder" id="der" href="" onclick="cambiar('derecha')"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="./static/js/app.js"></script>
 
 </body>
 
