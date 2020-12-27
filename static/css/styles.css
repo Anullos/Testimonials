@@ -4,10 +4,82 @@
 }
 
 body {
+  width: 100%;
+  height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 32px;
   padding: 0;
   margin: 0;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plantilla {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  background-image: url(../../static/img/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding: 1em 1em;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.contenido {
+  background-image: url(../../static/img/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.texto {
+  font-size: 0.7em;
+  color: var(--darkBlue);
+  font-weight: lighter;
+}
+
+.nombre {
+  display: inline-block;
+  font-size: 0.4em;
+  font-weight: bold;
+  color: var(--darkBlue);
+}
+
+.puesto {
+  display: inline-block;
+  font-size: 0.4em;
+  color: var(--grayishBlue);
+}
+
+.imagen {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+}
+
+.foto {
+  position: absolute;
+  z-index: 1;
+  width: 70%;
+  height: 70%;
 }
 
 /*# sourceMappingURL=styles.css.map */
