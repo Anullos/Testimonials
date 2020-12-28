@@ -3,6 +3,16 @@
   --grayishBlue: hsl(240, 18%, 77%);
 }
 
+#text1,
+#text2,
+#text3 {
+  margin: 0;
+}
+
+#fotoa {
+  margin: 0;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -122,6 +132,7 @@ body {
   background-position: center center;
   outline: none;
 }
+
 .bder {
   width: 20px;
   border: 0;
@@ -131,6 +142,56 @@ body {
   background-size: 9px;
   background-position: center center;
   outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .plantilla {
+    width: 90%;
+    height: 100%;
+  }
+
+  .card {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+
+  .imagen {
+    grid-row-start: 1;
+  }
+
+  .botones {
+    bottom: 32px;
+    left: 130px;
+  }
+
+  .contenido {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-position-x: center;
+    background-position-y: 50px;
+    background-size: 60px;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .texto {
+    text-align: center;
+    padding: 1em;
+  }
+
+  .nombre {
+    margin: 0;
+    padding-top: 1em;
+    display: block;
+  }
+
+  .puesto {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
